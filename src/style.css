@@ -1,6 +1,10 @@
 body {
     margin: 0;
     font-family: 'Montserrat';
+    background-image: url("../images/fondo_pokemon.jpg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .title {
     height: 200px;
@@ -9,22 +13,23 @@ body {
     align-items: flex-start;
     text-align: center;
     background-color: rgba(126, 121, 122, 0.349);
-    margin: 1em;
+    margin: 1.5em;
 }
 .list {
-    font-size: 32px;
-    height: 135px;
-    width: 175px; 
-    border-color: blanchedalmond;
+    font-size: 28px;
+    height: 100px;
+    width: 150px; 
+    border-color: whitesmoke;
     border-width: 10px;
     border-radius: 25%;
+    color: whitesmoke;
+    background-color: rgb(70,70,70);
 }
 .searcher {
     width: 175px;
     height: 50px;
 }
 .container {
-    background-color: rgb(204, 45, 69);
     height: 750px;
     max-width: 100%;
     background-repeat: no-repeat;
