@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+.title {
+    height: 200px;
+}
+.list, .searcher{
+    align-items: flex-start;
+    text-align: center;
+    background-color: rgba(126, 121, 122, 0.349);
+    margin: 1em;
+}
+.list {
+    font-size: 32px;
+    height: 135px;
+    width: 175px; 
+    border-color: blanchedalmond;
+    border-width: 10px;
+    border-radius: 25%;
+}
+.searcher {
+    width: 175px;
+    height: 50px;
+}
+.container {
+    background-color: rgb(204, 45, 69);
+    height: 750px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.post {
+    height: 300px;
+    margin-bottom: 2em;
+}
+.table {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
