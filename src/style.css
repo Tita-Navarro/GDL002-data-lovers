@@ -204,3 +204,6 @@ font-size: 16px;
         font-size: 12px;
         }
     }
+    #screen_1 {
+        display:none;
+    }
