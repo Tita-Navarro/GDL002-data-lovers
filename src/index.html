@@ -10,28 +10,38 @@
   <!--Mandamos traer una biblioteca de tipografía en línea-->
 </head>
 <body>
+    
   <header id="principal" class="title">
    
-    <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" alt="home" class="table">
+    <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" alt="home" class="table"id="home">
     <div id="table" class="table">
     <button id="list" class="list">Pokémon List</button>
-    <img alt="mobile_app" src="https://assets.pokemon.com/assets/cms2-es-es/img/misc/gus/promotions/mobile-app-gus-176x50-es.jpg" class="table">
+    <img alt="mobile_app" id="mobile_app" src="https://assets.pokemon.com/assets/cms2-es-es/img/misc/gus/promotions/mobile-app-gus-176x50-es.jpg" class="table">
     <input type="search" id="searcher" class="searcher">▼  
   </div>
   </header>
     <div id="root" class="container">
       <section id="content" class="content">
-        <article id="post" class="post"> </article>
         <article id="post" class="post">
           <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" alt="notice" class="notice">
+          <h1 id="welcome" class="welcome"><strong>¡Bienvenid@ a Pokémon Go Notes!</strong></h1>
+          <p id="about" class="info"> Lugar donde te brindaremos información necesaria para jugar aplicaciones <br>
+           de Pokémon y también te unas a la comunidad, y seas parte de las aventuras<br> 
+        junto a Pikachu, aportando información acerca de esta gran historia Pokémon. <br><br> Si también quieres recordar
+        y revivir Pokémon, has llegado al sitio indicado. <br><br> <strong>¡Vamos a descubrir a los Pokémon!</strong></p>
+        </article>
+        <article id="post2" class="post">
+          <br>
+          <h1 id="pokevillage" class="invite">Únete a la comunidad.</h1>
+          <img alt="pokemunnity" id="community" class="community" src="../images/community.jpg"> <br>
+          <button type="submit" class="register"> Regístrate </button>
         </article>
       </section>
     </div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
+    <div id="pokelist" hidden></div>
+    <footer id="footer_page" class="bottom_page"></footer>
+    
     <script src="./data/pokemon/pokemon.js"></script>
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
