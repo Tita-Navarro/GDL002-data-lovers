@@ -115,6 +115,7 @@ font-size: 16px;
        height: 130px;
    }
    .table {
+        max-width: 80%; 
         max-width: 70%;   
 }
 .list {
@@ -193,7 +194,7 @@ font-size: 16px;
     .notice{
         max-width: 50%;
     }
-    .welcome {
+  .welcome {
         font-size: 25px;
         align-content: center;
         text-align: center;
@@ -202,8 +203,16 @@ font-size: 16px;
         .info{
         text-align: center;
         font-size: 12px;
+<<<<<<< HEAD
         }
     }
     #screen_1 {
         display:none;
     }
+=======
+  }
+}
+#screen_1 {
+    display: none;
+}
+>>>>>>> 367b06ca19e9cd17695b7138a99e233922d5083e
