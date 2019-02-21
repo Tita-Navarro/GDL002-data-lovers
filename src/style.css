@@ -110,12 +110,13 @@ font-size: 16px;
     margin-right: 40px;
     margin-top: 1em;
     margin-bottom: 0;
+}
 @media screen and (min-width: 780px) and (max-width:1024px) {
    .title {
        height: 130px;
    }
    .table {
-        max-width: 80%;   
+        max-width: 70%;   
 }
 .list {
     font-size: 24px;
@@ -194,4 +195,13 @@ font-size: 16px;
     .notice{
         max-width: 50%;
     }
+    .welcome {
+        font-size: 25px;
+        align-content: center;
+        text-align: center;
+        vertical-align: middle;
+        }
+        .info{
+        text-align: center;
+        font-size: 12px;
 }
