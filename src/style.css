@@ -203,16 +203,28 @@ font-size: 16px;
         .info{
         text-align: center;
         font-size: 12px;
-<<<<<<< HEAD
         }
     }
-    #screen_1 {
-        display:none;
+    .pokelist {
+        width: 95%;
+        height:70%;
+        font-size: 12px;
+        display: flex!important;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(236, 236, 236, 0.712);
+        margin: 40px;
+        flex-wrap: wrap;
+
     }
-=======
-  }
-}
-#screen_1 {
-    display: none;
-}
->>>>>>> 367b06ca19e9cd17695b7138a99e233922d5083e
+    .singlePokemon{
+        border-radius: 2px;
+        border: solid 1px;
+        border-color: black;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 12px;
+    }
