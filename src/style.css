@@ -110,6 +110,7 @@ font-size: 16px;
     margin-right: 40px;
     margin-top: 1em;
     margin-bottom: 0;
+}
 @media screen and (min-width: 780px) and (max-width:1024px) {
    .title {
        height: 130px;
@@ -196,9 +197,9 @@ font-size: 16px;
     }
 }
 
-
-
+.template {
+    border: 2px dashed lightgray;
+}
 #screen_1 {
     display: none;
 }
-

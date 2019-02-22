@@ -10,8 +10,9 @@ let html = '';
 
 function PokemonTemplate(singlePokemon){
     let pokemonCardTemplate = `
-    <div>
-      <h1>${singlePokemon.name}</h1>
+    <div class="template">
+        <h1>N.${singlePokemon.num}</h1>  
+        <h1>${singlePokemon.name}</h1>
       <img src="${singlePokemon.img}">        
     </div>
     `;
