@@ -1,6 +1,16 @@
-require('../src/data.js');
 
+describe('show Pokemons', ()=>{
+  it('to be defined', () => {
+    expect(pokemonTemplate).toBeDefined();
+  });
 
+  it('should be a function', () => {
+    expect(typeof pokemonTemplate).toBe('function');
+  });
+
+});
+
+/*
 describe('example', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
@@ -10,3 +20,4 @@ describe('example', () => {
     expect(example()).toBe('example');
   });
 });
+*/

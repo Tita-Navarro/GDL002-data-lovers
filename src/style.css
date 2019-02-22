@@ -5,7 +5,6 @@ body {
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flexbox;
     background-position: center center;
     background-attachment: fixed;
     margin-left: auto;
@@ -62,7 +61,6 @@ body {
     margin: auto;
     height: auto;
     width: 300px;
-    vertical-align: middle;
 }
 .welcome {
 font-size: 35px;
@@ -111,12 +109,34 @@ font-size: 16px;
     margin-top: 1em;
     margin-bottom: 0;
 }
+    .pokelist {
+        width: 95%;
+        height:70%;
+        font-size: 12px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(236, 236, 236, 0.712);
+        margin: 40px;
+        flex-wrap: wrap;
+    }
+    .singlePokemon{
+        border-radius: 2px;
+        border: solid 1px;
+        border-color: black;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 12px;
+    }
 @media screen and (min-width: 780px) and (max-width:1024px) {
    .title {
        height: 130px;
    }
    .table {
-        max-width: 80%;   
+        max-width: 80%; 
+        max-width: 70%;   
 }
 .list {
     font-size: 24px;
@@ -170,7 +190,6 @@ font-size: 16px;
     }
     .table {
         max-width: 50%;
-        vertical-align: 
     }
     .list {
         font-size: 15px;
@@ -195,11 +214,14 @@ font-size: 16px;
     .notice{
         max-width: 50%;
     }
-}
-
-.template {
-    border: 2px dashed lightgray;
-}
-#screen_1 {
-    display: none;
-}
+  .welcome {
+        font-size: 25px;
+        align-content: center;
+        text-align: center;
+        vertical-align: middle;
+        }
+        .info{
+        text-align: center;
+        font-size: 12px;
+        }
+    }
