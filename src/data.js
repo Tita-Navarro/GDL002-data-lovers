@@ -5,7 +5,7 @@
 //};
 //window.example = example;
 
-let card = document.querySelector('#screen_1');
+let card = document.querySelector('#pkList');
 let html = '';
 
 function PokemonTemplate(singlePokemon){

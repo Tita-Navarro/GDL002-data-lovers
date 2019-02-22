@@ -5,7 +5,6 @@ body {
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flexbox;
     background-position: center center;
     background-attachment: fixed;
     margin-left: auto;
@@ -110,6 +109,27 @@ font-size: 16px;
     margin-top: 1em;
     margin-bottom: 0;
 }
+    .pokelist {
+        width: 95%;
+        height:70%;
+        font-size: 12px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(236, 236, 236, 0.712);
+        margin: 40px;
+        flex-wrap: wrap;
+    }
+    .singlePokemon{
+        border-radius: 2px;
+        border: solid 1px;
+        border-color: black;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 12px;
+    }
 @media screen and (min-width: 780px) and (max-width:1024px) {
    .title {
        height: 130px;
@@ -204,27 +224,4 @@ font-size: 16px;
         text-align: center;
         font-size: 12px;
         }
-    }
-    .pokelist {
-        width: 95%;
-        height:70%;
-        font-size: 12px;
-        display: flex!important;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgba(236, 236, 236, 0.712);
-        margin: 40px;
-        flex-wrap: wrap;
-
-    }
-    .singlePokemon{
-        border-radius: 2px;
-        border: solid 1px;
-        border-color: black;
-        width: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 12px;
     }
