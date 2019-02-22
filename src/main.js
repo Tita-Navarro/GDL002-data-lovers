@@ -8,6 +8,6 @@
   const home=()=>{
     document.getElementById("root").style.display='block';
     document.getElementById("pkList").style.display='none';
-  }
+  };
 document.getElementById("home").addEventListener('click', home);
  
