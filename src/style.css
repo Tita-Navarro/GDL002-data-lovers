@@ -191,6 +191,9 @@ font-size: 16px;
     .table {
         max-width: 50%;
     }
+    .invite{
+        font-size: 14px;
+    }
     .list {
         font-size: 15px;
         height: 50px;
@@ -220,8 +223,13 @@ font-size: 16px;
         text-align: center;
         vertical-align: middle;
         }
-        .info{
+    .info{
         text-align: center;
         font-size: 12px;
         }
+        .pokelist {
+            width: 70%;
+            height: 50%;
+            justify-content: center;
     }
+}
