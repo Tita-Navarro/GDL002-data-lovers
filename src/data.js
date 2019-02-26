@@ -1,8 +1,3 @@
-//window.{
-//  pokemonTemplate: () => {
-//    return pokemonCardTemplate;
-//  }
-// };
 let card = document.querySelector('#pkList');
 let typeFilterEl = document.querySelector('#type_filter');
 // let weaknessesFilterEl = document.querySelector('#weaknesses_filter');
@@ -10,8 +5,8 @@ let typeFilterEl = document.querySelector('#type_filter');
 //Template para tarjetitas
 function pokemonTemplate(singlePokemon){
     let pokemonCardTemplate = `
-    <div class="singlePokemon">
-      <h1>${singlePokemon.name}</h1>
+    <div id="info" class="singlePokemon">
+      <h1 class="namepk">${singlePokemon.name}</h1>
       <img src="${singlePokemon.img}">        
     </div>
     `;

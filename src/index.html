@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"> <!--para incluir palabras con acentos-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, 
+  initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<title>Pokémon Go Notes</title> <!--Nombre de la página-->
   <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+  <link rel="stylesheet" type="text/css" href="style_icons.css" media="screen">
   <!--Aquí llamamos el style.css para darle vida a nuestra página-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,400i,500,600,700,700i" rel="stylesheet"> 
   <!--Mandamos traer una biblioteca de tipografía en línea-->
@@ -13,24 +15,52 @@
     
   <header id="principal" class="title">
    
-    <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" alt="home" class="table" id="home">
+    <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" 
+    alt="home" class="table" id="home">
     <div id="table" class="table">
     <button id="list" class="list">Pokémon List</button>
-    <a target="_blank" href="https://play.google.com/store/search?q=aplicaciones+pokemon&c=apps"><img alt="mobile_app" id="mobile_app" src="https://assets.pokemon.com/assets/cms2-es-es/img/misc/gus/promotions/mobile-app-gus-176x50-es.jpg" class="table"></a>
-    <input type="search" id="searcher" class="searcher">▼  
+    <a target="_blank" href="https://play.google.com/store/search?q=aplicaciones+pokemon&c=apps">
+      <img alt="mobile_app" id="mobile_app" 
+      src="https://assets.pokemon.com/assets/cms2-es-es/img/misc/gus/promotions/mobile-app-gus-176x50-es.jpg" 
+      class="table">
+    </a>  
+    <img alt="pokemon_day" id="pokeday" class="pokeday" src="../images/pokeday.png">
   </div>
   </header>
     <div id="root" class="container">
       <section id="content" class="content">
         <h2 id="Blank" hidden>Notes</h2>
+        
         <article id="post" class="post">
-          <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" alt="notice" class="notice">
+          <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" 
+          alt="notice" class="notice">
           <h2 id="welcome" class="welcome"><strong>¡Bienvenid@ a Pokémon Go Notes!</strong></h2>
           <p id="about" class="info"> Lugar donde te brindaremos información necesaria para jugar aplicaciones <br>
            de Pokémon y también te unas a la comunidad, y seas parte de las aventuras<br> 
         junto a Pikachu, aportando información acerca de esta gran historia Pokémon. <br><br> Si también quieres recordar
         y revivir Pokémon, has llegado al sitio indicado. <br><br> <strong>¡Vamos a descubrir a los Pokémon!</strong></p>
         </article>
+
+        <div id="post3" class="post3">
+          <div id="movie" class="news">
+              <h2><span class="pokemon_curiosities">Pokelícula de la temporada</span></h2>
+              <iframe class="curiosities" width="315" height="210" src="https://www.youtube.com/embed/r7mTqcQ-w7g" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen="allowfullscreen"></iframe>
+          </div>
+           <div id="curiosities_note" class="news"> 
+            <h2><span id="curious_notes" class="pokemon_curiosities">Datos curiosos</span></h2>
+            <a target="_blank" href="https://www.appgoby.com/10-curiosidades-de-pokemon/"><img alt="curious_notes" 
+            class="img_curiosities" id="img_curiosities" src="../images/curiosidades_pokemon.jpg"></a>
+          </div>
+          <div id="pokemon_day" class="news">
+            <h2><span id="relevant_notes" class="pokemon_curiosities">Pokémon day</span></h2>
+            <a target="_blank" 
+            href="https://thegamersports.mundodeportivo.com/noticias-videojuegos/videojuegos-de-nintendo/noticias-pokemon/dia-de-pokemon-en-pokemon-go/">
+          <img alt="pokemon_day" class="pokemon_day" id="pokemon_day" src="../images/pokemon_day.jpg"></a>>
+          </div>
+        </div>
+        
         <article id="post2" class="post">
           <br>
           <h2 id="pokevillage" class="invite">Únete a la comunidad.</h2>
@@ -52,6 +82,29 @@
      
     <div id="pkList" class="pokelist" hidden></div>
     <footer id="footer_page" class="bottom_page"></footer>
+    </div> <br>
+    
+    <div id="Filter" class="table" hidden>
+    
+      <aside id="lateral_content" class="lateral-content" hidden>
+        <h2 id="filtered" class="filtered">Filtrar u ordenar por:</h2>  
+          <button id="alphabet_AZ" class="alphabet">De la A a la Z</button>
+          <button id="alphabet_ZA" class="alphabet">De la Z a la A</button>
+      </div>
+      </aside>
+    
+      <div id="pkList" class="pokelist" hidden></div>
+    
+    
+      <footer id="footer_page" class="bottom_page">
+        <h3 class="social_network">Síguenos: </h3>
+        <h3 class="social_network"><a target="_blank" href="https://www.facebook.com/ElitePokemon/">
+          <span class="icon-facebook"></a></span>
+        <a target="_blank" href="https://www.instagram.com/pogohub/"><span class="icon-instagram"></a></span>
+        <a target="_blank" href="https://twitter.com/PokemonGOHubNet">
+          <span class="icon-twitter"></a></span><span class="about_us">About us</span><span class="about_us">
+            ©Derechos Reservados 2019</span></h3>
+      </footer>
     
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
