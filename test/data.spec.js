@@ -1,3 +1,5 @@
+require('../src/data/pokemon/pokemon.js')
+
 
 describe('show Pokemons', ()=>{
   it('to be defined', () => {
