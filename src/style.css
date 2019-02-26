@@ -53,8 +53,11 @@ body {
 }
 #home:hover{
     background-color: rgba(70,70,70,0.520);
-    
-    
+}
+.pokeday{
+    width: 150px;
+    height: 120px;
+    margin-left: 5px;
 }
 #mobile_app{
     border-color: whitesmoke;
@@ -104,7 +107,7 @@ font-size: 16px;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    margin-left: 10px;
+    
 }
 .img_curiosities{
     width: 295px;
@@ -118,6 +121,10 @@ font-size: 16px;
     flex-wrap: wrap;
     display: flex;
     
+}
+.pokemon_day{
+    width: 315px;
+    height: 200px;
 }
 #post2 {
     height: 450px;
@@ -269,6 +276,10 @@ h3 span {
     .table {
         max-width: 60%;
     }
+    .pokeday{
+        width: 80px;
+        height: 90px;
+    }
     .list {
         font-size: 13px;
         height: 45px;
@@ -318,6 +329,9 @@ h3 span {
     }
     #mobile_app {
         width: 100px;
+    }
+    .pokeday{
+        display: none;
     }
     .notice{
         max-width: 50%;
