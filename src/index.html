@@ -21,7 +21,7 @@
     <button id="list" class="list">Pokémon List</button>
     <a target="_blank" href="https://play.google.com/store/search?q=aplicaciones+pokemon&c=apps">
       <img alt="mobile_app" id="mobile_app" 
-      src="https://assets.pokemon.com/assets/cms2-es-es/img/misc/gus/promotions/mobile-app-gus-176x50-es.jpg" 
+      src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/desarrollo/images/mobile_app.jpg" 
       class="table">
     </a>  
     <img alt="pokemon_day" id="pokeday" class="pokeday" src="../images/pokeday.png">
@@ -57,7 +57,7 @@
             <h2><span id="relevant_notes" class="pokemon_curiosities">Pokémon day</span></h2>
             <a target="_blank" 
             href="https://thegamersports.mundodeportivo.com/noticias-videojuegos/videojuegos-de-nintendo/noticias-pokemon/dia-de-pokemon-en-pokemon-go/">
-          <img alt="pokemon_day" class="pokemon_day" id="pokemon_day" src="../images/pokemon_day.jpg"></a>>
+          <img alt="pokemon_day" class="pokemon_day" id="pokemon_day" src="../images/pokemon_day.jpg"></a>
           </div>
         </div>
         
@@ -69,32 +69,34 @@
         </article>
       </section>
     </div>
-    <select id="type_filter">
-      <option value="Fire">Fuego</option>
-      <option value="Water">Agua</option>
-      <option value="Flying">Aire</option>
-      <option value="Electric">Electrico</option>
-      <option value="Grass">Pasto</option>
-      <option value="Rock">Roca</option>
-      <option value="Dragon">Dragon</option>
-    </select> 
-
-    <select id="sort_aphab">
-      <option value="a-z">Z-A</option>
-      <option value="z-a">A - Z</option>
-    </select>
-
-     
-    <div id="pkList" class="pokelist" hidden></div>
-    <footer id="footer_page" class="bottom_page"></footer>
-    </div> <br>
     
     <div id="Filter" class="table" hidden>
-    
+      <select id="sort_aphab">
+        <option></option>
+        <option value="z-a">A - Z</option>
+      </select>
+
       <aside id="lateral_content" class="lateral-content" hidden>
         <h2 id="filtered" class="filtered">Filtrar u ordenar por:</h2>  
           <button id="alphabet_AZ" class="alphabet">De la A a la Z</button>
           <button id="alphabet_ZA" class="alphabet">De la Z a la A</button>
+          <select id="type_filter" class="type_filter">
+              <option value="Fire">Fuego</option>
+              <option value="Water">Agua</option>
+              <option value="Flying">Aire</option>
+              <option value="Electric">Electrico</option>
+              <option value="Grass">Planta</option>
+              <option value="Rock">Roca</option>
+              <option value="Dragon">Dragon</option>
+              <option value="Poison">Veneno</option>
+              <option value="Psychic">Psíquico</option>
+              <option value="Fighting">Peleador</option>
+              <option value="Bug">Insecto</option>
+              <option value="Ice">Hielo</option>
+              <option value="Ghost">Fantasma</option>
+              <option value="Normal">Normal</option>
+              
+            </select> 
       </div>
       </aside>
     

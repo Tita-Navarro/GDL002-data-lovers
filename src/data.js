@@ -9,7 +9,7 @@ data.typeFilter  = (data, type) => {
   return filteredPokemon;
 };
 
-
+// Funcion de ordenado alfabéticamente
 data.orderByName = (data) => {
   let orderedData = data.sort ((pokemon_1, pokemon_2) => {
     if (pokemon_1.name > pokemon_2.name) {
@@ -23,5 +23,3 @@ data.orderByName = (data) => {
   return orderedData;
 };
 
-//let sort = orderByName(POKEMON.pokemon);
-//console.log(sort);

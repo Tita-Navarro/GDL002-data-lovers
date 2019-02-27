@@ -32,7 +32,7 @@ sortEl.addEventListener('change', () => {
   let dataSort= data.orderByName(POKEMON.pokemon, sortEl.value );
   renderer(dataSort, card);
 
-})
+});
 
 //Template para tarjetitas
 function pokemonTemplate(singlePokemon){

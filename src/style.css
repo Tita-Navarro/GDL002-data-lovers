@@ -10,7 +10,7 @@ body {
     background-attachment: fixed;
     margin-left: auto;
     margin-right: auto;
-    cursor:url(../images/cursor.cur), url(../images/Pikachu.cur) 7 14, auto;
+    cursor:url(https://claudiagarfias.works/laboratoria/sharedimages/cursor.cur) 7 14, url(../images/Pikachu.cur) 7 14, auto;
 }
 
 /* css para header y su contenido*/
@@ -22,14 +22,15 @@ body {
     text-align: center;
     background-color: white;
     margin: 1em;
-    font-size: 20px;
-    height: 58px;
-    width: 184px; 
+    font-size: 24px;
+    height: 120px;
+    width: 175px; 
     border-color: whitesmoke;
     border-width: 5px;
     border-radius: 25%;
     color: whitesmoke;
     background-color: rgb(70,70,70);
+    font-family: 'Montserrat';
 }
 .list, #mobile_app {
     margin-left: 45px;
@@ -57,13 +58,15 @@ body {
 .pokeday{
     width: 150px;
     height: 120px;
-    margin-left: 5px;
+    margin-left: 29px;
+    vertical-align: middle;
 }
 #mobile_app{
     border-color: whitesmoke;
     color: whitesmoke;
     border: solid 4px;
     border-radius: 25%;
+    width: 180px;
 }
 
 .post {
@@ -222,7 +225,7 @@ h3 span {
     .namepk {
         font-size: 15px;
     }
-    .alphabet {
+    .alphabet, .type_filter {
         font-size: 12px;
         height: 40px;
         width: 115px; 
@@ -233,9 +236,15 @@ h3 span {
         background-color: rgb(70,70,70);
         margin-left: 20px;
     }
+    .type_filter{
+        background-color: white;
+        color: black;
+        border-color: rgb(70,70,70);
+    }
     .filtered {
         font-size: 24px;
     }
+
 /*css para funcionalidad en distintas pantallas responsive */
 @media screen and (min-width: 780px) and (max-width:1024px) {
    .title {
@@ -246,14 +255,9 @@ h3 span {
         max-width: 70%;   
 }
 .list {
-    font-size: 16.5px;
-    height: 55px;
-    width: 90px; 
-    border-color: whitesmoke;
-    border-width: 8px;
-    border-radius: 25%;
-    color: whitesmoke;
-    background-color: rgb(70,70,70);
+    font-size: 20px;
+    height: 70px;
+    width: 115px; 
 }
 .searcher {
     width: 150px;
@@ -263,12 +267,13 @@ h3 span {
     width: 300px;
 }
 #mobile_app {
-    width: 200px;
+    width: 165px;
 }
 .filtered {
     font-size: 22px;
 }
 }
+
 @media screen and (min-width: 480px) and (max-width:780px) {
     .title{
         height: 110px;
@@ -281,18 +286,12 @@ h3 span {
         height: 90px;
     }
     .list {
-        font-size: 13px;
-        height: 45px;
-        width: 75px; 
-        border-color: whitesmoke;
-        border-width: 6px;
-        border-radius: 25%;
-        color: whitesmoke;
-        background-color: rgb(70,70,70);
+        font-size: 15px;
+        height: 50px;
+        width: 89px; 
     }
-    .searcher {
-        width: 60px;
-        height: 30px;
+    #mobile_app {
+        width: 140px;
     }
     #home {
         width: 225px;
@@ -301,25 +300,22 @@ h3 span {
         font-size: 18px;
     }
 }
+
 @media screen and (max-width:480px) {
     .title {
         height: 90px;
     }
     .table {
         max-width: 50%;
+        display: inline;
     }
     .invite{
         font-size: 13px;
     }
     .list {
-        font-size: 10px;
-        height: 35px;
-        width: 60px; 
-        border-color: whitesmoke;
-        border-width: 5px;
-        border-radius: 25%;
-        color: whitesmoke;
-        background-color: rgb(70,70,70);
+        font-size: 12.7px;
+        height: 50px;
+        width: 77px; 
     }
     .list, #mobile_app {
         margin-left: 5px;
@@ -360,10 +356,10 @@ h3 span {
         height: 55px;
         width: 100px;
     }
-        .pokelist {
-            width: 70%;
-            height: 50%;
-            justify-content: center;
+    .pokelist {
+        width: 70%;
+        height: 50%;
+        justify-content: center;
     }
     .bottom_page {
         margin-top: -4em;
@@ -386,5 +382,12 @@ h3 span {
         color: white;
         font-size: 12px;
         margin-right: 10px;
-
+    }
+    .alphabet, .type_filter {
+        font-size: 11px;
+        height: 50px;
+        width: 87px;
+        border-width: 3px;
+        margin-left: 8px;
+    }
 }
