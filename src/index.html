@@ -71,15 +71,13 @@
     </div>
     
     <div id="Filter" class="table" hidden>
-      <select id="sort_aphab">
-        <option></option>
-        <option value="z-a">A - Z</option>
-      </select>
 
       <aside id="lateral_content" class="lateral-content" hidden>
         <h2 id="filtered" class="filtered">Filtrar u ordenar por:</h2>  
-          <button id="alphabet_AZ" class="alphabet">De la A a la Z</button>
-          <button id="alphabet_ZA" class="alphabet">De la Z a la A</button>
+          <select id="sort_aphab" class="type_filter">
+            <option></option>
+            <option value="z-a">A - Z</option>
+          </select>
           <select id="type_filter" class="type_filter">
               <option value="Fire">Fuego</option>
               <option value="Water">Agua</option>
