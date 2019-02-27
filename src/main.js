@@ -12,4 +12,10 @@
     document.getElementById("pkList").style.display='none';
   };
 document.getElementById("home").addEventListener('click', home);
+
+let typeFilterEl = document.querySelector('#type_filter');
+typeFilterEl.addEventListener('change', () => {
+ let data = typeFilter(POKEMON.pokemon, typeFilterEl.value);
+ renderer(data, card);
+});
  

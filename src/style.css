@@ -244,6 +244,7 @@ h3 span {
     .filtered {
         font-size: 24px;
     }
+
 /*css para funcionalidad en distintas pantallas responsive */
 @media screen and (min-width: 780px) and (max-width:1024px) {
    .title {
@@ -272,6 +273,7 @@ h3 span {
     font-size: 22px;
 }
 }
+
 @media screen and (min-width: 480px) and (max-width:780px) {
     .title{
         height: 110px;
@@ -298,12 +300,14 @@ h3 span {
         font-size: 18px;
     }
 }
+
 @media screen and (max-width:480px) {
     .title {
         height: 90px;
     }
     .table {
         max-width: 50%;
+        display: inline;
     }
     .invite{
         font-size: 13px;
@@ -352,10 +356,10 @@ h3 span {
         height: 55px;
         width: 100px;
     }
-        .pokelist {
-            width: 70%;
-            height: 50%;
-            justify-content: center;
+    .pokelist {
+        width: 70%;
+        height: 50%;
+        justify-content: center;
     }
     .bottom_page {
         margin-top: -4em;
@@ -378,5 +382,12 @@ h3 span {
         color: white;
         font-size: 12px;
         margin-right: 10px;
+    }
+    .alphabet, .type_filter {
+        font-size: 11px;
+        height: 50px;
+        width: 87px;
+        border-width: 3px;
+        margin-left: 8px;
     }
 }

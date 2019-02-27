@@ -1,4 +1,4 @@
-require('../src/data/pokemon/pokemon.js')
+require('../src/data/pokemon/pokemon.js');
 
 
 describe('show Pokemons', ()=>{
