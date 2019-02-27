@@ -1,31 +1,7 @@
-let card = document.querySelector('#pkList');
-
-// let weaknessesFilterEl = document.querySelector('#weaknesses_filter');
-
-//Template para tarjetitas
-function pokemonTemplate(singlePokemon){
-    let pokemonCardTemplate = `
-    <div id="info" class="singlePokemon">
-      <h1 class="namepk">${singlePokemon.num} ${singlePokemon.name}</h1>
-      <img src="${singlePokemon.img}">        
-    </div>
-    `;
-    return pokemonCardTemplate;
-}
-
-// Funcion  para mostrar las tarjeticas
-const renderer = (data, htmlElement) => {
-  let html = '';
-  for(let singlePokemon of data) {
-    html = html + pokemonTemplate(singlePokemon); //html + Es para que junte las tarjetitas cada vez q se cumpla el ciclo, para que las vaya sumando en pantalla
-  }        
-  htmlElement.innerHTML = html;
-};
-renderer(POKEMON.pokemon, card);
+window.data = {};
 
 // Funcion filtro de tipos pkm
-
-const typeFilter  = (data, type) => {
+data.typeFilter  = (data, type) => {
   let filteredPokemon = data.filter(pokemon => {
    const index = pokemon.type.indexOf(type);
    return index != -1;
@@ -33,24 +9,17 @@ const typeFilter  = (data, type) => {
   return filteredPokemon;
 };
 
-window.typeFilter=typeFilter;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Funcion de ordenado alfabéticamente
+data.orderByName = (data) => {
+  let orderedData = data.sort ((pokemon_1, pokemon_2) => {
+    if (pokemon_1.name > pokemon_2.name) {
+      return 1;
+    }
+    if (pokemon_1.name < pokemon_2.name) {
+      return -1;
+    }
+    return 0;
+  });
+  return orderedData;
+};
 
