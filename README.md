@@ -22,49 +22,12 @@ Nuestra propuesta en corto plazo es mostrar y dar información a los usuarios y 
 Nuestro usuario(s) pueden ser hombres y mujeres de 20 a 35 años estudiantes de universidad o que trabajen y que jueguen Pokémon Go u otros juegos o quieran recordar y saber acerca de Pokémon.
 
 ### Storytelling
+- Luis estudia y en sus ratos libres juega algunas aplicaciones de Pokémon, por su corto tiempo que tiene no puede dedicar más tiempo a evolucionar sus pokémons, ha visto algunas páginas pero ninguna le ha ayudado a cumplir su objetivo.
 
-- Este proyecto se debe resolver en duplas.
-- El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-- Tiempo para completarlo: 3 semana divididas en 3 sprints (una entrega del producto funcional al término de cada sprint).
+- María trabaja de tiempo completo y en sus pocos tiempos libres juega videojuegos, hace poco vió noticias acerca de Pokémon y quiere recordar un poco de su infancia y a la vez decidir si quisiera descargar alguna aplicación de Pokémon a su móvil.
 
-## Objetivos de aprendizaje
+## Prototipado de baja fidelidad
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
-
-Dicho en palabras sencillas, aprenderás a:
-
-- Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
-- Pensar en las **necesidades de los usuarios** para crear historias de usuario.
-- Escribir y trabajar con **historias de usuario**, sus definiciones de
-  terminado (_definition of done_) en la organización y planificación de tu
-  trabajo.
-- Definir qué data y de qué forma mostrarla en el producto, basándote en
-  tu **entendimiento del usuario**.
-- Crear productos que sigan los **principios básicos de diseño visual** y
-  las **heurísticas de usabilidad**.
-- Iterar el diseño del producto, basándote en los resultados de los
-  **tests de usabilidad**.
-- Manipular **_arreglos_ (_arrays_) y _objetos_ (_objects_)**.
-- **Manipular el DOM** (agregar elementos dinámicamente basados en la data).
-- **Manejar eventos del DOM** para permitir interacción con el usuario
-  (filtrado, ordenado, ...).
-- Entender los beneficios y complejidades de **trabajar en equipo** en un
-  ambiente de incertidumbre.
-
-## Parte Obligatoria
-
-Los criterios para considerar que has completado este proyecto son:
-
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
-### Historias de usuario
 
 Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
 de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
