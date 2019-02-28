@@ -65,4 +65,4 @@ describe('example', () => {
 
     it('debería retornar "type" con filter data', () => {
       assert.equal(data.typeFilter(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "HIJKLMNOPQRSTUVWXYZABCDEFG");
-    });
+ */
