@@ -1,10 +1,12 @@
-require('../src/data.js');
+
+/*require('../src/data.js');
 // require('../src/data/pokemon/pokemon.js');
 
 //const pokemon = require('../src/data/pokemon/pokemon.json');
+//require('../src/data/pokemon/pokemon.js');
+require('../src/data.js')
 
-
-
+describe('data', () => {
 
 describe('show Pokemons', ()=>{
  // it('to be defined', () => {
@@ -51,9 +53,16 @@ describe('example', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('debería ser un objeto', () => {
+    assert.equal(typeof data, 'object');
   });
-});
-*/
+
+  describe('data.typeFilter', () => {
+
+    it('debería ser una función', () => {
+      assert.equal(typeof data.typeFilter, 'function');
+    });
+
+    it('debería retornar "type" con filter data', () => {
+      assert.equal(data.typeFilter(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "HIJKLMNOPQRSTUVWXYZABCDEFG");
+    });

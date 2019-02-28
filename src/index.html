@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"> <!--para incluir palabras con acentos-->
-  <meta name="viewport" content="width=device-width, user-scalable=no, 
-  initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pokémon Go Notes</title> <!--Nombre de la página-->
   <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
   <link rel="stylesheet" type="text/css" href="style_icons.css" media="screen">
@@ -45,7 +44,7 @@
           <div id="movie" class="news">
               <h2><span class="pokemon_curiosities">Pokelícula de la temporada</span></h2>
               <iframe class="curiosities" width="315" height="210" src="https://www.youtube.com/embed/r7mTqcQ-w7g" 
-              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen="allowfullscreen"></iframe>
           </div>
            <div id="curiosities_note" class="news"> 
@@ -57,7 +56,7 @@
             <h2><span id="relevant_notes" class="pokemon_curiosities">Pokémon day</span></h2>
             <a target="_blank" 
             href="https://thegamersports.mundodeportivo.com/noticias-videojuegos/videojuegos-de-nintendo/noticias-pokemon/dia-de-pokemon-en-pokemon-go/">
-          <img alt="pokemon_day" class="pokemon_day" id="pokemon_day" src="../images/pokemon_day.jpg"></a>
+          <img alt="pokemon_day" class="pokemon_day" id="pokemonDay" src="../images/pokemon_day.jpg"></a>
           </div>
         </div>
         
@@ -71,15 +70,13 @@
     </div>
     
     <div id="Filter" class="table" hidden>
-      <select id="sort_aphab">
-        <option></option>
-        <option value="z-a">A - Z</option>
-      </select>
 
     <aside id="lateral_content" class="lateral-content" hidden>
         <h2 id="filtered" class="filtered">Filtrar u ordenar por:</h2>  
-          <button id="alphabet_AZ" class="alphabet">De la A a la Z</button>
-          <button id="alphabet_ZA" class="alphabet">De la Z a la A</button>
+          <select id="sort_aphab" class="type_filter">
+            <option value="sel">Elige</option>
+            <option value="a-z">A - Z</option>
+          </select>
           <select id="type_filter" class="type_filter">
               <option value="Fire">Fuego</option>
               <option value="Water">Agua</option>
@@ -96,9 +93,10 @@
               <option value="Ghost">Fantasma</option>
               <option value="Normal">Normal</option>
               
-            </select> 
-        </div>
-    </aside>
+            </select>
+          </aside>
+      </div>
+      
     
       <div id="pkList" class="pokelist" hidden></div>
     
@@ -106,11 +104,13 @@
       <footer id="footer_page" class="bottom_page">
         <h3 class="social_network">Síguenos: </h3>
         <h3 class="social_network"><a target="_blank" href="https://www.facebook.com/ElitePokemon/">
-          <span class="icon-facebook"></a></span>
-        <a target="_blank" href="https://www.instagram.com/pogohub/"><span class="icon-instagram"></a></span>
+          <span class="icon-facebook"></span></a>
+        <a target="_blank" href="https://www.instagram.com/pogohub/"><span class="icon-instagram"></span></a>
         <a target="_blank" href="https://twitter.com/PokemonGOHubNet">
-          <span class="icon-twitter"></a></span><span class="about_us">About us</span><span class="about_us"> ©Derechos Reservados 2019</span>
+          <span class="icon-twitter"></span></a><span class="about_us">About us</span><span class="about_us"> ©Derechos Reservados 2019</span>
         </h3>
+          <span class="icon-twitter"></span></a><span class="about_us">About us</span><span class="about_us">
+            ©Derechos Reservados 2019</span></h3>
       </footer>
     
     <script src="data.js"></script>
