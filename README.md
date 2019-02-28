@@ -44,3 +44,35 @@ En un prototipo de alta fidelidad, se realizó el movimiento que debe de present
 
 Aquí mostramos la liga para acceder al prototipado en Figma.
 [Figma](https://www.figma.com/proto/O40xENLXokBb1MMcjX8rj2Ld/Prototipado-DataLovers?node-id=1%3A2&scaling=scale-down)
+![Prototipado Figma](https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/test/images/Prototipado_alta_fidelidad_figma.jpg)
+
+## Historias de Usuario
+
+Definimos cada historia de usuario en base a la necesidad que pensamos cubrir y que el usuario al verlo supiera que hacer.
+
+- Como usuario necesito una pagina de inicio para conocer información relevante de la aplicación y que puede hacer en el sitio.
+
+- Como usuario debo poder ver todos los Pokémons en un listado con nombre y número de cada uno de ellos.
+
+- Como usuario necesito filtrar los Pokémons para poder listarlos segun una condicion dada.
+
+- Como usuario necesito ordenar la lista de pokemones segun una condicion dada.
+
+- Como usuario necesito que la aplicación se adapte a los diferentes dispositivos para poder usar la app en diferentes pantallas.
+
+## Pruebas de usuarios
+
+Los usuarios que probaron la aplicación vieron que el botón que utilizamos para regresar al inicio no se diferenciaba, el listado de los Pokémons necesitaba una mejor distribución. 
+
+También el botón que tenemos que lleva al usuario a ver aplicaciones móviles se cambió para que en las versiones responsivas fuera claro y legible.
+
+El color de fondo de las tarjetas en el listado de Pokémons se le agregó ya que no cuadraba con el fondo del body.
+
+Al final el usuario supo como navegar en la página e ir a los otros sitios web que le proporcionamos con la mecánica de que de un corto a mediano plazo podamos generar una comunidad con los usuarios que lleguen a nuestra página web puedan ayudarnos a generar más data que sirva a otros usuarios.
+
+## Resultados
+
+Al final los resultados de nuestra web son algunos que ponemos a continuación:
+
+![Resultado web](https://github.com/Tita-Navarro/GDL002-data-lovers/blob/test/images/Prototipado_alta_fidelidad.jpg)
+
