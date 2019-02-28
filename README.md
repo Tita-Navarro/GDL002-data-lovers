@@ -76,3 +76,9 @@ Al final los resultados de nuestra web son algunos que ponemos a continuación:
 
 ![Resultado web](https://github.com/Tita-Navarro/GDL002-data-lovers/blob/test/images/Prototipado_alta_fidelidad.jpg)
 
+![Resultado web 2](https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/test/images/resultado_web_final.jpg)
+
+![Resultado web 3](https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/test/images/resultado_web_final2.jpg)
+
+![Resultado web 4](https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/test/images/resultado_web_final3.jpg)
+
