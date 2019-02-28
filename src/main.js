@@ -43,7 +43,7 @@ function pokemonTemplate(singlePokemon){
   </div>
   `;
   return pokemonCardTemplate;
-};
+}
 
  // Funcion  para mostrar las tarjetitas
 const renderer = (data, htmlElement) => {
