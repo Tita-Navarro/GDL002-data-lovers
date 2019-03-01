@@ -146,7 +146,7 @@ font-size: 16px;
     font-size: 20px;
 }
 .register {
-    font-size: 22px;
+    font-size: 21px;
     height: 75px;
     width: 130px; 
     border-color: whitesmoke;
@@ -156,6 +156,7 @@ font-size: 16px;
     background-color: rgb(70,70,70);
     display: block;
     margin: auto;
+    font-family: 'Montserrat'
 }
 
 /*css para footer y su contenido */
@@ -182,8 +183,8 @@ h3 span {
     margin-right: 25px;
 }
 .about_us {
-    margin-left: 98px;
-    font-size: 22px;
+    margin-left: 50px;
+    font-size: 20px;
 }
 .about_us:hover{
     color: yellow;
@@ -207,7 +208,6 @@ h3 span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 12px;
     background-color: rgb(125, 188, 255);
     margin: 8px;
     }
@@ -294,6 +294,9 @@ h3 span {
     .filtered {
         font-size: 18px;
     }
+    .register{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -347,7 +350,7 @@ h3 span {
         max-width: 175px;
     }
     .register{
-        font-size: 16px;
+        font-size: 15px;
         height: 55px;
         width: 100px;
     }
