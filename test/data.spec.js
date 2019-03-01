@@ -3,13 +3,16 @@ require('../src/data.js');
 //const pokemon = require('../src/data/pokemon/pokemon.json');
 
 describe('filter pokemon', ()=>{
+  it('to be defined', () => {
+    expect(data.typeFilter).toBeDefined();
+  });
+  
   it('is a function', ()=>{
     expect(typeof data.typeFilter).toBe('function');
   });
-});
-describe('filter pokemon', ()=>{
-  it('to be defined', () => {
-    expect(data.typeFilter).toBeDefined();
+  
+  it('return an object', () => {
+    expect(typeof data.typeFilter()).toBe('object');
   });
 });
 
@@ -17,9 +20,12 @@ describe ('ordered by name pokemon', ()=>{
   it ('to be defined', ()=>{
     expect(data.orderByName).toBeDefined();
   });
-});
-describe('ordered by name pokemon', ()=>{
+
   it('is a function', ()=>{
     expect(typeof data.orderByName).toBe('function');
+  });
+
+  it('return an object', () =>{
+    expect(typeof data.orderByName()).toBe ('object');
   });
 });
