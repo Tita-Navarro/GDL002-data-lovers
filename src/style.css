@@ -1,3 +1,4 @@
+/*css body */
 body {
     margin: 0;
     font-family: 'Montserrat';
@@ -5,42 +6,67 @@ body {
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flexbox;
     background-position: center center;
     background-attachment: fixed;
     margin-left: auto;
     margin-right: auto;
-    cursor:url(../images/cursor.cur), url(../images/Pikachu.cur) 7 14, auto;
+    cursor:url(https://claudiagarfias.works/laboratoria/sharedimages/cursor.cur) 7 14, url(../images/Pikachu.cur) 7 14, auto;
 }
+
+/* css para header y su contenido*/
 .title {
     height: 150px;
 }
-.list, .searcher{
+.list, .button_submit{
     align-items: flex-start;
     text-align: center;
     background-color: white;
     margin: 1em;
-}
-.list {
-    font-size: 28px;
-    height: 100px;
-    width: 150px; 
+    font-size: 24px;
+    height: 120px;
+    width: 175px; 
     border-color: whitesmoke;
-    border-width: 10px;
+    border-width: 5px;
     border-radius: 25%;
     color: whitesmoke;
     background-color: rgb(70,70,70);
+    font-family: 'Montserrat';
 }
-.searcher {
-    width: 175px;
-    height: 50px;
+.list, #mobile_app {
+    margin-left: 45px;
 }
+
+/*css para el contenido en primera pantalla*/
 .container {
-    height: 875px;
+    max-height: 100%;
     max-width: 100%;
     background-repeat: no-repeat;
     background-color: rgba(183, 183, 185, 0.521);
     margin: 40px;
+}
+.content{
+    max-width: 100%;
+}
+#home{
+    width: 300px;
+    border-radius: 25%;
+    
+}
+#home:hover{
+    background-color: rgba(70,70,70,0.520);
+}
+.pokeday{
+    width: 150px;
+    height: 120px;
+    margin-left: 29px;
+    vertical-align: middle;
+}
+#mobile_app{
+    border-color: whitesmoke;
+    color: whitesmoke;
+    border: solid 4px;
+    border-radius: 25%;
+    width: 180px;
 }
 
 .post {
@@ -62,7 +88,6 @@ body {
     margin: auto;
     height: auto;
     width: 300px;
-    vertical-align: middle;
 }
 .welcome {
 font-size: 35px;
@@ -74,15 +99,45 @@ vertical-align: middle;
 text-align: center;
 font-size: 16px;
 }
+.pokemon_curiosities{
+    font-size: 16px;
+}
+.pokemon_curiosities:hover{
+    color: blue;
+}
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+.img_curiosities{
+    width: 295px;
+    height: 210px;
+}
+.post3{
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(236, 236, 236, 0.712);
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+.pokemon_day{
+    width: 315px;
+    height: 200px;
+}
 #post2 {
-    height: 400px;
+    height: 450px;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 .community{
     border-radius: 50%;
     width: 300px;
     height: 200px;
-    max-width: auto;
     margin: auto;
     display: block;
 }
@@ -91,9 +146,9 @@ font-size: 16px;
     font-size: 20px;
 }
 .register {
-    font-size: 18px;
-    height: 50px;
-    width: 110px; 
+    font-size: 21px;
+    height: 75px;
+    width: 130px; 
     border-color: whitesmoke;
     border-width: 8px;
     border-radius: 25%;
@@ -101,32 +156,168 @@ font-size: 16px;
     background-color: rgb(70,70,70);
     display: block;
     margin: auto;
+    font-family: 'Montserrat'
 }
+
+/*css para footer y su contenido */
 .bottom_page {
     height: 100px;
     background-color: black;
     padding: 1em 2em;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 1em;
+    margin-top: -3em;
     margin-bottom: 0;
+    display: flex;
+    max-width: 100%;
 }
+.social_network{
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 25px;
+}
+h3 span {
+    color: white;
+    font-size: 22px;
+    margin-right: 25px;
+}
+.about_us {
+    margin-left: 250px;
+    font-size: 20px;
+}
+.copyright{
+    margin-left: 200px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1em;
+}
+.about_us:hover{
+    color: yellow;
+}
+/*css para div de listado pokémon*/
+    .pokelist {
+            width: 90%;
+            height: 75%;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: rgba(236, 236, 236, 0.712);
+            margin: 40px;
+            flex-wrap: wrap;
+    }
+    .singlePokemon{
+    border-radius: 2px;
+    border: solid 1px;
+    border-color: black;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(125, 188, 255);
+    margin: 8px;
+    }
+    .lateral-content{
+        max-width: 90%;        
+        height: 30px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(125, 188, 255, 0.589);
+        margin-top: 1.5em;
+        margin: 40px;
+        vertical-align: middle;
+        align-content: center;
+    }
+    .namepk {
+        font-size: 15px;
+    }
+    .type_filter {
+        font-size: 12px;
+        height: 40px;
+        width: 115px; 
+        border-width: 5px;
+        border-radius: 25%;
+        margin-left: 20px;
+        background-color: white;
+        color: black;
+        border-color: rgb(70,70,70);
+    }
+    .filtered {
+        font-size: 24px;
+    }
+
+    .content_form{
+        background-color:rgb(70,70,70);
+        width:600px;
+        padding: 10px 20px;
+        margin: 20% auto;
+        position: relative;
+        border-radius: 25%;
+        border-width: 15px;
+        border-color: whitesmoke;
+      }
+      .form{
+        background-color: rgba(0,0,0,.8);
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+      }
+      #registry:target{
+        opacity:1;
+        pointer-events:auto;
+      }
+      .form_text{
+          text-align: left;
+          align-content: center;
+          display: block;
+          margin-left: 80px;
+          color: white;
+          font-size: 20px;
+      }
+      #nickname, #name, #mail {
+          width: 132px;
+          align-items: center;
+          border-right: 5px;
+          border-bottom: 5px;
+          display: inline-flexbox;
+          
+      }
+      #name {
+          width: 150px;
+      }
+      #mail{
+          width: 170px;
+      }
+      .form_close{
+          color: whitesmoke;
+      }
+      .button_submit{
+          font-size: 16px;
+          width: 100px;
+          height:50px;
+          align-content: center;
+          display: block;
+          margin-left: 120px;
+      }
+
+/*css para funcionalidad en distintas pantallas responsive */
 @media screen and (min-width: 780px) and (max-width:1024px) {
    .title {
        height: 130px;
    }
    .table {
+        max-width: 80%; 
         max-width: 70%;   
 }
 .list {
-    font-size: 24px;
-    height: 75px;
-    width: 120px; 
-    border-color: whitesmoke;
-    border-width: 8px;
-    border-radius: 25%;
-    color: whitesmoke;
-    background-color: rgb(70,70,70);
+    font-size: 20px;
+    height: 70px;
+    width: 115px; 
 }
 .searcher {
     width: 150px;
@@ -136,9 +327,13 @@ font-size: 16px;
     width: 300px;
 }
 #mobile_app {
-    width: 200px;
+    width: 165px;
+}
+.filtered {
+    font-size: 22px;
 }
 }
+
 @media screen and (min-width: 480px) and (max-width:780px) {
     .title{
         height: 110px;
@@ -146,45 +341,47 @@ font-size: 16px;
     .table {
         max-width: 60%;
     }
-    .list {
-        font-size: 18px;
-        height: 60px;
-        width: 100px; 
-        border-color: whitesmoke;
-        border-width: 6px;
-        border-radius: 25%;
-        color: whitesmoke;
-        background-color: rgb(70,70,70);
+    .pokeday{
+        width: 80px;
+        height: 90px;
     }
-    .searcher {
-        width: 60px;
-        height: 30px;
+    .list {
+        font-size: 15px;
+        height: 50px;
+        width: 89px; 
+    }
+    #mobile_app {
+        width: 140px;
     }
     #home {
         width: 225px;
     }
+    .filtered {
+        font-size: 18px;
+    }
+    .register{
+        font-size: 20px;
+    }
 }
+
 @media screen and (max-width:480px) {
     .title {
         height: 90px;
     }
     .table {
         max-width: 50%;
-        vertical-align: 
+        display: inline;
+    }
+    .invite{
+        font-size: 13px;
     }
     .list {
-        font-size: 15px;
+        font-size: 12.7px;
         height: 50px;
-        width: 80px; 
-        border-color: whitesmoke;
-        border-width: 5px;
-        border-radius: 25%;
-        color: whitesmoke;
-        background-color: rgb(70,70,70);
+        width: 77px; 
     }
-    .searcher {
-        width: 40px;
-        height: 25px;
+    .list, #mobile_app {
+        margin-left: 5px;
     }
     #home {
         width: 150px;
@@ -192,16 +389,68 @@ font-size: 16px;
     #mobile_app {
         width: 100px;
     }
+    .pokeday{
+        display: none;
+    }
     .notice{
         max-width: 50%;
     }
-    .welcome {
-        font-size: 25px;
+  .welcome {
+        font-size: 19px;
         align-content: center;
         text-align: center;
         vertical-align: middle;
         }
-        .info{
+    .info{
         text-align: center;
         font-size: 12px;
+        }
+    .post{
+        height: 325px;
+    }
+    #post2{
+        height: 350px;
+    }
+    .community {
+        max-width: 175px;
+    }
+    .register{
+        font-size: 15px;
+        height: 55px;
+        width: 100px;
+    }
+    .pokelist {
+        width: 70%;
+        height: 50%;
+        justify-content: center;
+    }
+    .bottom_page {
+        margin-top: -4em;
+    }
+    .social_network{
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .filtered {
+        font-size: 12px;
+    }
+    .pokemon_curiosities{
+        font-size: 15px;
+    }
+    .about_us {
+        margin-left: 25px;
+        font-size: 16px;
+    }
+    h3 span {
+        color: white;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .alphabet, .type_filter {
+        font-size: 11px;
+        height: 50px;
+        width: 87px;
+        border-width: 3px;
+        margin-left: 8px;
+    }
 }
