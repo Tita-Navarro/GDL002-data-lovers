@@ -64,14 +64,12 @@ describe('pokemonNotes', ()=>{
     it('should be defined', () => {
       expect(data.typeFilter).toBeDefined();
     });
-describe('filter pokemon', ()=>{
-  it('to be defined', () => {
-    expect(data.typeFilter).toBeDefined();
-  });
+
        it('should filter by type', () =>{
       expect(data.typeFilter(mockData, 'Fire')).toEqual(result);
-    }); 
-  });
+      }); 
+    });
+  
   describe ('pokemon sorted by name', ()=>{
     let resultOrder=[{
       "id": 1,
