@@ -17,7 +17,7 @@ body {
 .title {
     height: 150px;
 }
-.list{
+.list, .button_submit{
     align-items: flex-start;
     text-align: center;
     background-color: white;
@@ -183,8 +183,14 @@ h3 span {
     margin-right: 25px;
 }
 .about_us {
-    margin-left: 50px;
+    margin-left: 250px;
     font-size: 20px;
+}
+.copyright{
+    margin-left: 200px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1em;
 }
 .about_us:hover{
     color: yellow;
@@ -239,6 +245,65 @@ h3 span {
     .filtered {
         font-size: 24px;
     }
+
+    .content_form{
+        background-color:rgb(70,70,70);
+        width:600px;
+        padding: 10px 20px;
+        margin: 20% auto;
+        position: relative;
+        border-radius: 25%;
+        border-width: 15px;
+        border-color: whitesmoke;
+      }
+      .form{
+        background-color: rgba(0,0,0,.8);
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 1s;
+      }
+      #registry:target{
+        opacity:1;
+        pointer-events:auto;
+      }
+      .form_text{
+          text-align: left;
+          align-content: center;
+          display: block;
+          margin-left: 80px;
+          color: white;
+          font-size: 20px;
+      }
+      #nickname, #name, #mail {
+          width: 132px;
+          align-items: center;
+          border-right: 5px;
+          border-bottom: 5px;
+          display: inline-flexbox;
+          
+      }
+      #name {
+          width: 150px;
+      }
+      #mail{
+          width: 170px;
+      }
+      .form_close{
+          color: whitesmoke;
+      }
+      .button_submit{
+          font-size: 16px;
+          width: 100px;
+          height:50px;
+          align-content: center;
+          display: block;
+          margin-left: 120px;
+      }
 
 /*css para funcionalidad en distintas pantallas responsive */
 @media screen and (min-width: 780px) and (max-width:1024px) {
