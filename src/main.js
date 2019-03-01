@@ -18,7 +18,7 @@ let sortEl = document.querySelector('#sort_aphab');
     document.getElementById ("lateral_content").style.display="none";
     document.getElementById("pkList").style.display='none';
   };
-document.getElementById("home").addEventListener('click', home);
+  document.getElementById("home").addEventListener('click', home);
 
 // Para mostrar el filtro
 typeFilterEl.addEventListener('change', () => {
@@ -38,7 +38,7 @@ sortEl.addEventListener('change', () => {
 function pokemonTemplate(singlePokemon){
   let pokemonCardTemplate = `
   <div id="info" class="singlePokemon">
-    <h1 class="namepk">${singlePokemon.name}</h1>
+    <h1 class="namepk">${singlePokemon.num} ${singlePokemon.name}</h1>
     <img src="${singlePokemon.img}">        
   </div>
   `;
