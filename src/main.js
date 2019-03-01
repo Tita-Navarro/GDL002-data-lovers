@@ -18,7 +18,7 @@ let sortEl = document.querySelector('#sort_aphab');
     document.getElementById ("lateral_content").style.display="none";
     document.getElementById("pkList").style.display='none';
   };
-document.getElementById("home").addEventListener('click', home);
+  document.getElementById("home").addEventListener('click', home);
 
 // Para mostrar el filtro
 typeFilterEl.addEventListener('change', () => {
