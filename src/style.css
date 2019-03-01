@@ -440,8 +440,9 @@ h3 span {
         font-size: 15px;
     }
     .about_us {
-        margin-left: 25px;
-        font-size: 16px;
+        
+        font-size: 13px;
+        margin-left: 0;
     }
     h3 span {
         color: white;
@@ -454,5 +455,25 @@ h3 span {
         width: 87px;
         border-width: 3px;
         margin-left: 8px;
+    }
+    .content_form{
+        width:292px;
+        height: 230px;
+        }
+    .form_text{
+        font-size: 13px;
+        margin-left: 0;    
+    }
+    .button_submit {
+        font-size: 13px;
+        width: 90px;
+        height: 50px;
+        align-content: center;
+        display: block;
+        margin-left: 40px;
+    }
+    .copyright{
+        margin-left: -30px;
+        font-size: 9px;
     }
 }
