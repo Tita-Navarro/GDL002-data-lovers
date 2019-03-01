@@ -15,12 +15,10 @@ data.orderByName = (data) => {
     if (pokemon_1.name > pokemon_2.name) {
       return 1;
     }
-    else if (pokemon_1.name < pokemon_2.name) {
+    if (pokemon_1.name < pokemon_2.name) {
       return -1;
     }
-    else{
     return 0;
-  }
   });
   return orderedData;
 };
