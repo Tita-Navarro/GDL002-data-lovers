@@ -390,6 +390,7 @@ h3 span {
     }
     #mobile_app {
         width: 100px;
+        display: inline-block;
     }
     .pokeday{
         display: none;
@@ -450,9 +451,9 @@ h3 span {
         margin-right: 10px;
     }
     .alphabet, .type_filter {
-        font-size: 11px;
-        height: 50px;
-        width: 87px;
+        font-size: 10px;
+        height: 40px;
+        width: 75px;
         border-width: 3px;
         margin-left: 8px;
     }
@@ -465,9 +466,9 @@ h3 span {
         margin-left: 0;    
     }
     .button_submit {
-        font-size: 13px;
-        width: 90px;
-        height: 50px;
+        font-size: 11px;
+        width: 75px;
+        height: 40px;
         align-content: center;
         display: block;
         margin-left: 40px;
@@ -475,5 +476,11 @@ h3 span {
     .copyright{
         margin-left: -30px;
         font-size: 9px;
+    }
+    #percentage{
+        font-size: 11px;
+        height: 45px;
+        width: 80px;
+        display: inline-block;
     }
 }
