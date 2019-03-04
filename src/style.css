@@ -247,7 +247,7 @@ h3 span {
         font-size: 24px;
     }
 
-    .content_form{
+    .content_form,.videocontent{
         background-color:rgb(70,70,70);
         width:600px;
         padding: 10px 20px;
@@ -257,7 +257,12 @@ h3 span {
         border-width: 15px;
         border-color: whitesmoke;
       }
-      .form{
+      .videocontent{
+        background-color:rgb(70,70,70);
+        width:750px;
+        display: inline-flex;
+      }
+      .form, .modalvideo{
         background-color: rgba(0,0,0,.8);
         position:fixed;
         top:0;
@@ -268,7 +273,7 @@ h3 span {
         pointer-events:none;
         transition: all 1s;
       }
-      #registry:target{
+      #registry:target, #videomodal:target{
         opacity:1;
         pointer-events:auto;
       }
@@ -280,13 +285,15 @@ h3 span {
           color: white;
           font-size: 20px;
       }
+      .colorbtn{
+          color: white;
+      }
       #nickname, #name, #mail {
           width: 132px;
           align-items: center;
           border-right: 5px;
           border-bottom: 5px;
-          display: inline-flexbox;
-          
+          display: inline-flex; 
       }
       #name {
           width: 150px;
@@ -476,6 +483,10 @@ h3 span {
     .copyright{
         margin-left: -30px;
         font-size: 9px;
+    }
+    .vmodal{
+        width: 350px;
+        height: 275px;
     }
     #percentage{
         font-size: 11px;
