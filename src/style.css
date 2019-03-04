@@ -261,6 +261,7 @@ h3 span {
         background-color:rgb(70,70,70);
         width:750px;
         display: block;
+        border-radius:0; 
       }
       .form, .modalvideo{
         background-color: rgba(0,0,0,.8);
