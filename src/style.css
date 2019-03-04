@@ -260,7 +260,7 @@ h3 span {
       .videocontent{
         background-color:rgb(70,70,70);
         width:750px;
-        display: inline-flex;
+        display: block;
       }
       .form, .modalvideo{
         background-color: rgba(0,0,0,.8);
@@ -487,6 +487,7 @@ h3 span {
     .vmodal{
         width: 350px;
         height: 275px;
+        display: inline-flex;
     }
     #percentage{
         font-size: 11px;
