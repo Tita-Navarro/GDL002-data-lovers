@@ -1,7 +1,7 @@
 let card = document.querySelector('#pkList');
 let typeFilterEl = document.querySelector('#type_filter');
 let sortEl = document.querySelector('#sort_aphab');
-let pokeCard= document.querySelector ('Info_Complete');
+//let pokeCard= document.querySelector ('Info_Complete');
 // let weaknessesFilterEl = document.querySelector('#weaknesses_filter');
 
 
@@ -71,6 +71,7 @@ function singlePokemon (completeTemplate){
   </div>
   </div>
   `;
+  document.getElementsByClassName("completeInfo").innerHTML= pokemonCardInfo ;
   console.log(pokemonCardInfo);
 }
 
