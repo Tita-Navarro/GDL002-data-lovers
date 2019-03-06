@@ -10,6 +10,7 @@ let sortEl = document.querySelector('#sort_aphab');
     document.getElementById ("pkList").style.display= 'flex';
     document.getElementById ("lateral_content").style.display="block";
     document.getElementById ("root").style.display='none';
+    document.getElementById ("filterDiv").style.display="flex";
   };
   document.getElementById("list").addEventListener('click', list);
 
