@@ -1,53 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="utf-8"> <!--para incluir palabras con acentos-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pokémon Go Notes</title> <!--Nombre de la página-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,400i,500,600,700,700i" rel="stylesheet">
+  <!--Mandamos traer una biblioteca de tipografía en línea-->
   <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
   <link rel="stylesheet" type="text/css" href="style_icons.css" media="screen">
+  <link rel="icon" href="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png"
+  sizes="228x228">
   <!--Aquí llamamos el style.css para darle vida a nuestra página-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,400i,500,600,700,700i" rel="stylesheet"> 
-  <!--Mandamos traer una biblioteca de tipografía en línea-->
+
 </head>
 <body>
     
   <header id="principal" class="title">
-   
+    
+  <div id="table" class="table">
     <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" 
     alt="home" class="table" id="home">
-    <div id="table" class="table">
     <button id="list" class="list">Pokémon List</button>
     <a target="_blank" href="https://play.google.com/store/search?q=aplicaciones+pokemon&c=apps">
-      <img alt="mobile_app" id="mobile_app" 
+      <img alt="mobile app" id="mobileApp" 
       src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/desarrollo/images/mobile_app.jpg" 
       class="table">
     </a>  
-    <img alt="pokemon_day" id="pokeday" class="pokeday" src="../images/pokeday.png">
+    <img alt="pokemon day" id="pokeday" class="pokeday" src="../images/pokeday.png">
   </div>
   </header>
     <div id="root" class="container">
-      <section id="content" class="content">
-        <h2 id="Blank" hidden>Notes</h2>
+       <section id="content" class="content">
+         <h2 id="nothing" hidden>Notes</h2>
         
-        <article id="post" class="post">
-          <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" 
-          alt="notice" class="notice">
-          <h2 id="welcome" class="welcome"><strong>¡Bienvenid@ a Pokémon Go Notes!</strong></h2>
-          <p id="about" class="info"> Lugar donde te brindaremos información necesaria para jugar aplicaciones <br>
-           de Pokémon y también te unas a la comunidad, y seas parte de las aventuras<br> 
-        junto a Pikachu, aportando información acerca de esta gran historia Pokémon. <br><br> Si también quieres recordar
-        y revivir Pokémon, has llegado al sitio indicado. <br><br> <strong>¡Vamos a descubrir a los Pokémon!</strong></p>
-        </article>
+          <article id="post" class="post">
+            <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" 
+            alt="notice" class="notice">
+            <h2 id="welcome" class="welcome"><strong>¡Bienvenid@ a Pokémon Go Notes!</strong></h2>
+            <p id="about" class="info"> Lugar donde te brindaremos información necesaria para jugar aplicaciones <br>
+             de Pokémon y también te unas a la comunidad, y seas parte de las aventuras<br> 
+             junto a Pikachu, aportando información acerca de esta gran historia Pokémon. <br><br> Si también quieres recordar
+            y revivir Pokémon, has llegado al sitio indicado. <br><br> <strong>¡Vamos a descubrir a los Pokémon!</strong></p>
+          </article>
 
-        <div id="post3" class="post3">
+      <div id="post3" class="post3">
           <div id="movie" class="news">
-              <h2><span class="pokemon_curiosities">Pokelícula de la temporada</span></h2>
-              <iframe class="curiosities" width="315" height="210" src="https://www.youtube.com/embed/r7mTqcQ-w7g" 
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen="allowfullscreen"></iframe>
+              <a href="#videoModal" class="videoCurious"><h2><span class="pokemon_curiosities">Pokelícula de la temporada</span></h2></a>
+                  <div id="videoModal" class="modalVideo">
+                    <div id="contentVideo" class="videoContent">
+                      <a  href="#" class="colorbtn"><span class="icon-squared-cross"></span></a>
+                      <iframe width="715" height="300" src= "https://www.youtube.com/embed/r7mTqcQ-w7g" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" class="videomodal"></iframe>
+                    </div>
+                  </div>
+              <iframe width="315" height="210" src= "https://www.youtube.com/embed/r7mTqcQ-w7g" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" class="curiosities"></iframe>
           </div>
-           <div id="curiosities_note" class="news"> 
+          <div id="curiosities_note" class="news"> 
             <h2><span id="curious_notes" class="pokemon_curiosities">Datos curiosos</span></h2>
             <a target="_blank" href="https://www.appgoby.com/10-curiosidades-de-pokemon/"><img alt="curious_notes" 
             class="img_curiosities" id="img_curiosities" src="../images/curiosidades_pokemon.jpg"></a>
@@ -60,24 +67,48 @@
           </div>
         </div>
         
-        <article id="post2" class="post">
-          <br>
+      <article id="post2" class="post">
           <h2 id="pokevillage" class="invite">Únete a la comunidad.</h2>
           <img alt="pokemunnity" id="community" class="community" src="../images/community.jpg"> <br>
-          <button type="submit" class="register"> Regístrate </button>
-        </article>
+          <a href="#registry" class="registryText register">Regístrate</a>
+            <div id="registry" class="form">
+              <div class="content_form">
+                <a  href="#" class="colorButton"><span class="icon-squared-cross"></span></a>
+                <h2 class="formText">Llena tus datos y se parte de la comunidad</h2>
+                <form action="index.html" method=get>
+                  <div class="formText">
+                    <label for="nickname" class="nickname">Nickname:</label>
+                    <input type="text" id="nickname"/>
+                  </div>
+                    <br>
+                  <div class="formText">
+                    <label for="name" class="name">Nombre(s):</label>
+                    <input type="text" id="name"/>
+                  </div>
+                    <br>  
+                  <div class="formText">
+                    <label for="mail" class="mail">E-mail:</label>
+                    <input type="email" id="mail" />
+                  </div>
+                  <div class="buttonSubmit">
+                    <button type="submit" class="buttonSubmit">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+      </article>
       </section>
     </div>
     
     <div id="Filter" class="table" hidden>
 
-    <aside id="lateral_content" class="lateral-content" hidden>
-        <h2 id="filtered" class="filtered">Filtrar u ordenar por:</h2>  
-          <select id="sort_aphab" class="type_filter">
-            <option value="sel">Elige</option>
-            <option value="a-z">A - Z</option>
-          </select>
-          <select id="type_filter" class="type_filter">
+      <aside id="lateral_content" class="lateral-content" hidden>
+          <h2 id="filtered" class="filtered">Filtrar u ordenar por:</h2>  
+            <select id="sort_aphab" class="type_filter">
+              <option value="sel">Elige</option>
+              <option value="a-z">A - Z</option>
+            </select>
+            <select id="type_filter" class="type_filter">
               <option value="Fire">Fuego</option>
               <option value="Water">Agua</option>
               <option value="Flying">Aire</option>
@@ -94,8 +125,9 @@
               <option value="Normal">Normal</option>
               
             </select>
-          </aside>
-      </div>
+            <button id="percentage" class="button_submit">Calcular porcentaje</button>
+      </aside>
+    </div>
       
     
       <div id="pkList" class="pokelist" hidden></div>
@@ -104,17 +136,19 @@
     
     
       <footer id="footer_page" class="bottom_page">
-        <h3 class="social_network">Síguenos: </h3>
-        <h3 class="social_network"><a target="_blank" href="https://www.facebook.com/ElitePokemon/">
+        <h3 class="socialNetwork">Síguenos: </h3>
+        <h3 class="socialNetwork"><a target="_blank" href="https://www.facebook.com/ElitePokemon/" class="facebook">
           <span class="icon-facebook"></span></a>
-        <a target="_blank" href="https://www.instagram.com/pogohub/"><span class="icon-instagram"></span></a>
-        <a target="_blank" href="https://twitter.com/PokemonGOHubNet">
-          <span class="icon-twitter"></span></a><span class="about_us">About us</span><br><span class="about_us"> ©Derechos Reservados 2019</span>
+        <a target="_blank" href="https://www.instagram.com/pogohub/" class="instagram"><span class="icon-instagram"></span></a>
+        <a target="_blank" href="https://twitter.com/PokemonGOHubNet" class="twitter">
+          <span class="icon-twitter"></span></a><span class="about_us">About us</span><br>
+          <span class="copyright"> ©Derechos Reservados 2019</span>
         </h3>
       </footer>
     
     <script src="data.js"></script>
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
+
