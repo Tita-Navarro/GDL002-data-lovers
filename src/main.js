@@ -1,7 +1,7 @@
-
 let card = document.querySelector('#pkList');
 let typeFilterEl = document.querySelector('#type_filter');
 let sortEl = document.querySelector('#sort_aphab');
+//let pokeCard= document.querySelector ('Info_Complete');
 // let weaknessesFilterEl = document.querySelector('#weaknesses_filter');
 
 
@@ -35,9 +35,9 @@ sortEl.addEventListener('change', () => {
 });
 
 //Template para tarjetitas
-function pokemonTemplate(singlePokemon){
+function pokemonTemplate(singlePokemon, index){
   let pokemonCardTemplate = `
-  <div id="info" class="singlePokemon">
+  <div id="${index}" class="singlePokemon">
     <h1 class="namepk">${singlePokemon.num} ${singlePokemon.name}</h1>
     <img src="${singlePokemon.img}">        
   </div>
@@ -48,10 +48,39 @@ function pokemonTemplate(singlePokemon){
  // Funcion  para mostrar las tarjetitas
 const renderer = (data, htmlElement) => {
   let html = '';
+  index=0;
   for(let singlePokemon of data) {
-    html = html + pokemonTemplate(singlePokemon); //html + Es para que junte las tarjetitas cada vez q se cumpla el ciclo, para que las vaya sumando en pantalla
+    html = html + pokemonTemplate(singlePokemon, index);
+    index= index+1; //html + Es para que junte las tarjetitas cada vez q se cumpla el ciclo, para que las vaya sumando en pantalla
   }        
   htmlElement.innerHTML = html;
 };
 renderer(POKEMON.pokemon, card);
+
+function singlePokemon (completeTemplate){
+  let data = POKEMON.pokemon[completeTemplate];
+  let pokemonCardInfo = `
+  <div id="completeInfo" class="cardComplete">
+  <h1 class="pkname"> ${data.num} ${data.name}</h1>
+  <img src="${data.img}"> 
+  <h2 class="typepk">${data.type}</h2>
+  <div class="restInfo">
+  <h3 class="secondaryInfo"><span class="height">${data.height}</span> <br>
+  <span class="weight"> ${data.weight}</span><br> 
+  <span class="weaknesses"> ${data.weaknesses}</span>
+  </div>
+  </div>
+  `;
+  document.getElementsByClassName("completeInfo").innerHTML= pokemonCardInfo ;
+  console.log(pokemonCardInfo);
+}
+
+let completeCard = document.getElementsByClassName('singlePokemon');
+for(let completeTemplate=0;completeTemplate<completeCard.length; completeTemplate++) {
+  let pk_element = completeCard[completeTemplate];
+  console.log(pk_element);
+  pk_element.addEventListener('click', function () {
+    singlePokemon(pk_element.id);
+  }, false)
+}
 
