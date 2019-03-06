@@ -17,7 +17,7 @@ body {
 .title {
     height: 150px;
 }
-.list, .button_submit{
+.list, .buttonSubmit{
     align-items: flex-start;
     text-align: center;
     background-color: white;
@@ -32,7 +32,7 @@ body {
     background-color: rgb(70,70,70);
     font-family: 'Montserrat';
 }
-.list, #mobile_app {
+.list, #mobileApp {
     margin-left: 45px;
 }
 
@@ -61,7 +61,7 @@ body {
     margin-left: 29px;
     vertical-align: middle;
 }
-#mobile_app{
+#mobileApp{
     border-color: whitesmoke;
     color: whitesmoke;
     border: solid 4px;
@@ -75,10 +75,10 @@ body {
     background-color: rgba(236, 236, 236, 0.712);
 }
 .table {
-    display: inline-block;
+    display: flexbox;
     vertical-align: middle;
     max-width: 100%;
-    margin: auto;
+    margin: 0;
     align-content: center;
     
 }
@@ -99,8 +99,13 @@ vertical-align: middle;
 text-align: center;
 font-size: 16px;
 }
+.videoCurious, .registryText, .facebook, .instagram, .twitter{
+    text-decoration: none;
+}
 .pokemon_curiosities{
     font-size: 16px;
+    color: black;
+    
 }
 .pokemon_curiosities:hover{
     color: blue;
@@ -150,13 +155,17 @@ font-size: 16px;
     height: 75px;
     width: 130px; 
     border-color: whitesmoke;
-    border-width: 8px;
+    border: solid 8px;
     border-radius: 25%;
-    color: whitesmoke;
     background-color: rgb(70,70,70);
     display: block;
     margin: auto;
-    font-family: 'Montserrat'
+    text-align: center;
+    font-family: 'Montserrat';
+    line-height: 65px;
+}
+.registryText{
+    color: white;
 }
 
 /*css para footer y su contenido */
@@ -171,9 +180,9 @@ font-size: 16px;
     display: flex;
     max-width: 100%;
 }
-.social_network{
+.socialNetwork{
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     text-align: left;
     margin-left: 25px;
 }
@@ -182,13 +191,14 @@ h3 span {
     font-size: 22px;
     margin-right: 25px;
 }
+
 .about_us {
-    margin-left: 250px;
-    font-size: 20px;
+    margin-left: 350px;
+    font-size: 26px;
 }
 .copyright{
     margin-left: 200px;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     margin-top: 1em;
 }
@@ -196,16 +206,16 @@ h3 span {
     color: yellow;
 }
 /*css para div de listado pokémon*/
-    .pokelist {
-            width: 90%;
-            height: 75%;
-            align-items: center;
-            justify-content: space-evenly;
-            background-color: rgba(236, 236, 236, 0.712);
-            margin: 40px;
-            flex-wrap: wrap;
+.pokelist {
+    width: 90%;
+    height: 75%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(236, 236, 236, 0.712);
+    margin: 40px;
+    flex-wrap: wrap;
     }
-    .singlePokemon{
+.singlePokemon{
     border-radius: 2px;
     border: solid 1px;
     border-color: black;
@@ -217,101 +227,96 @@ h3 span {
     background-color: rgb(125, 188, 255);
     margin: 8px;
     }
-    .lateral-content{
-        max-width: 90%;        
-        height: 30px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgba(125, 188, 255, 0.589);
-        margin-top: 1.5em;
-        margin: 40px;
-        vertical-align: middle;
-        align-content: center;
+.lateral-content{
+    max-width: 90%;        
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(125, 188, 255, 0.589);
+    margin-top: 1.5em;
+    margin: 40px;
+    vertical-align: middle;
+    align-content: center;
     }
-    .namepk {
-        font-size: 15px;
+.namepk {
+    font-size: 15px;
     }
-    .type_filter, #percentage {
-        font-size: 12px;
-        height: 40px;
-        width: 115px; 
-        border-width: 5px;
-        border-radius: 25%;
-        margin-left: 20px;
-        background-color: white;
-        color: black;
-        border-color: rgb(70,70,70);
-        vertical-align: middle;
+.type_filter, #percentage {
+    font-size: 12px;
+    height: 40px;
+    width: 115px; 
+    border-width: 5px;
+    border-radius: 25%;
+    margin-left: 20px;
+    background-color: white;
+    color: black;
+    border-color: rgb(70,70,70);
+    vertical-align: middle;
     }
-    .filtered {
-        font-size: 24px;
+.filtered {
+    font-size: 24px;
     }
 
-    .content_form,.videocontent{
-        background-color:rgb(70,70,70);
-        width:600px;
-        padding: 10px 20px;
-        margin: 20% auto;
-        position: relative;
-        border-radius: 25%;
-        border-width: 15px;
-        border-color: whitesmoke;
+.content_form,.videoContent{
+    background-color:rgb(70,70,70);
+    width:600px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    border-radius: 25%;
+    border-width: 15px;
+    border-color: whitesmoke;
       }
-      .videocontent{
-        background-color:rgb(70,70,70);
-        width:750px;
-        display: block;
-        border-radius:0; 
+.videoContent{
+    background-color:rgb(70,70,70);
+    width:750px;
+    display: block;
+    border-radius:0; 
       }
-      .form, .modalvideo{
-        background-color: rgba(0,0,0,.8);
-        position:fixed;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
-        opacity:0;
-        pointer-events:none;
-        transition: all 1s;
+.form, .modalVideo{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
       }
-      #registry:target, #videomodal:target{
-        opacity:1;
-        pointer-events:auto;
+#registry:target, #videoModal:target{
+    opacity:1;
+    pointer-events:auto;
       }
-      .form_text{
-          text-align: left;
-          align-content: center;
-          display: block;
-          margin-left: 80px;
-          color: white;
-          font-size: 20px;
+.formText{
+    text-align: left;
+    align-content: center;
+    display: block;
+    margin-left: 80px;
+    color: white;
+    font-size: 20px;
       }
-      .colorbtn{
-          color: white;
+.colorButton{
+    color: white;
       }
-      #nickname, #name, #mail {
-          width: 132px;
-          align-items: center;
-          border-right: 5px;
-          border-bottom: 5px;
-          display: inline-flex; 
+#nickname, #name, #mail {
+    width: 200px;
+    height: 15px;
+    align-items: center;
+    border-right: 5px;
+    border-bottom: 5px;
+    display: flex; 
       }
-      #name {
-          width: 150px;
+.form_close{
+    color: whitesmoke;
       }
-      #mail{
-          width: 170px;
-      }
-      .form_close{
-          color: whitesmoke;
-      }
-      .button_submit{
-          font-size: 16px;
-          width: 100px;
-          height:50px;
-          align-content: center;
-          display: inline-block;
-          margin-left: 120px;
+.buttonSubmit{
+    font-size: 16px;
+    width: 100px;
+    height:50px;
+    align-content: center;
+    display: block;
+    margin-left: 120px;
       }
       
 
@@ -321,27 +326,30 @@ h3 span {
        height: 130px;
    }
    .table {
-        max-width: 80%; 
-        max-width: 70%;   
-}
-.list {
-    font-size: 20px;
-    height: 70px;
-    width: 115px; 
-}
-.searcher {
-    width: 150px;
-    height: 40px;
-}
-#home {
-    width: 300px;
-}
-#mobile_app {
-    width: 165px;
-}
-.filtered {
-    font-size: 22px;
-}
+        max-height: 90%;   
+    }
+    .list {
+        font-size: 20px;
+        height: 70px;
+        width: 115px; 
+    }   
+    .searcher {
+        width: 150px;
+        height: 40px;
+    }
+    #home {
+        width: 300px;
+    }
+    #mobileApp {
+        width: 165px;
+    }
+    .filtered {
+        font-size: 22px;
+    }
+    .copyright{
+        margin-left: 175px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width:780px) {
@@ -360,7 +368,7 @@ h3 span {
         height: 50px;
         width: 89px; 
     }
-    #mobile_app {
+    #mobileApp {
         width: 140px;
     }
     #home {
@@ -372,6 +380,15 @@ h3 span {
     .register{
         font-size: 20px;
     }
+    .socialNetwork{
+        font-size: 20px;
+    }
+    .about_us {
+        margin-left: 180px;
+    }
+    .copyright{
+        margin-left: 100px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -379,8 +396,8 @@ h3 span {
         height: 90px;
     }
     .table {
-        max-width: 50%;
-        display: inline;
+        max-width: 80%;
+        display: flex;
     }
     .invite{
         font-size: 13px;
@@ -390,15 +407,19 @@ h3 span {
         height: 50px;
         width: 77px; 
     }
-    .list, #mobile_app {
+    .list, #mobileApp {
         margin-left: 5px;
     }
     #home {
         width: 150px;
+        vertical-align: middle;
+        margin-top: -12px;
+        height: 120px;
     }
-    #mobile_app {
+    #mobileApp {
         width: 100px;
-        display: inline-block;
+        display: flex;
+        margin-top: 8px;
     }
     .pokeday{
         display: none;
@@ -429,6 +450,7 @@ h3 span {
         font-size: 15px;
         height: 55px;
         width: 100px;
+        line-height: 50px;
     }
     .pokelist {
         width: 70%;
@@ -436,9 +458,9 @@ h3 span {
         justify-content: center;
     }
     .bottom_page {
-        margin-top: -4em;
+        margin-top: -3em;
     }
-    .social_network{
+    .socialNetwork{
         font-size: 14px;
         margin-left: 5px;
     }
@@ -469,11 +491,11 @@ h3 span {
         width:292px;
         height: 230px;
         }
-    .form_text{
+    .formText{
         font-size: 13px;
         margin-left: 0;    
     }
-    .button_submit {
+    .buttonSubmit {
         font-size: 11px;
         width: 75px;
         height: 40px;
@@ -488,12 +510,12 @@ h3 span {
     .vmodal{
         width: 350px;
         height: 275px;
-        display: inline-flex;
+        display: flex;
     }
     #percentage{
         font-size: 11px;
         height: 45px;
         width: 80px;
-        display: inline-block;
+        display: flexbox;
     }
 }
