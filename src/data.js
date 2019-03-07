@@ -23,4 +23,18 @@ data.orderByName = (data) => {
   return orderedData;
 };
 
+data.orderByEndName = (data) => {
+  let orderedDataEndName = data.sort ((pokemon1, pokemon2) => {
+    if (pokemon1.name < pokemon2.name){
+      return 1;
+    }
+    if (pokemon1.name > pokemon2.name) {
+      return -1;
+    }
+    return 0;
+  });
+  return orderedDataEndName;
+};
+  
+
 

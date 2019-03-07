@@ -1,6 +1,7 @@
 let card = document.querySelector('#pkList');
 let typeFilterEl = document.querySelector('#type_filter');
-let sortEl = document.querySelector('#sort_aphab');
+let sortElAz = document.querySelector('#az-button');
+let sortElZa = document.querySelector('#za-button');
 //let pokeCard= document.querySelector ('Info_Complete');
 // let weaknessesFilterEl = document.querySelector('#weaknesses_filter');
 
@@ -27,12 +28,16 @@ typeFilterEl.addEventListener('change', () => {
   renderer(_data, card);
  });
 
-
 // para mostrar el ordenado
-sortEl.addEventListener('change', () => {
-  let dataSort= data.orderByName(POKEMON.pokemon, sortEl.value );
+sortElAz.addEventListener('click', () => {
+  let dataSort= data.orderByName(POKEMON.pokemon);
   renderer(dataSort, card);
+});
 
+sortElZa.addEventListener('click', () => {
+  
+  let dataSort= data.orderByEndName (POKEMON.pokemon);
+  renderer(dataSort, card);
 });
 
 //Template para tarjetitas
@@ -49,7 +54,7 @@ function pokemonTemplate(singlePokemon, index){
  // Funcion  para mostrar las tarjetitas
 const renderer = (data, htmlElement) => {
   let html = '';
-  index=0;
+  let index=0;
   for(let singlePokemon of data) {
     html = html + pokemonTemplate(singlePokemon, index);
     index= index+1; //html + Es para que junte las tarjetitas cada vez q se cumpla el ciclo, para que las vaya sumando en pantalla
@@ -72,8 +77,8 @@ function singlePokemon (completeTemplate){
   </div>
   </div>
   `;
-  document.getElementsByClassName("completeInfo").innerHTML= pokemonCardInfo ;
-  console.log(pokemonCardInfo);
+ console.log(pokemonCardInfo);
+ return pokemonCardInfo;
 }
 
 let completeCard = document.getElementsByClassName('singlePokemon');
@@ -82,6 +87,5 @@ for(let completeTemplate=0;completeTemplate<completeCard.length; completeTemplat
   console.log(pk_element);
   pk_element.addEventListener('click', function () {
     singlePokemon(pk_element.id);
-  }, false)
+  }, false);
 }
-

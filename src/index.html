@@ -75,7 +75,7 @@
               <div class="content_form">
                 <a  href="#" class="colorButton"><span class="icon-squared-cross"></span></a>
                 <h2 class="formText">Llena tus datos y se parte de la comunidad</h2>
-                <form action="index.html" method=get>
+                <form action="index.html" method="get">
                   <div class="formText">
                     <label for="nickname" class="nickname">Nickname:</label>
                     <input type="text" id="nickname"/>
@@ -104,10 +104,8 @@
 
       <section id="lateral_content" class="lateralContent">
           <h2 id="filtered" class="filtered">Filtrar u ordenar por:</h2>  
-            <select id="sort_aphab" class="type_filter">
-              <option value="sel">Elige</option>
-              <option value="a-z">A - Z</option>
-            </select>
+          <input type="button" id="az-button" value="A - Z" class="type_filter">
+          <input type="button" id="za-button" value="Z - A" class="type_filter">
             <select id="type_filter" class="type_filter">
               <option value="Fire">Fuego</option>
               <option value="Water">Agua</option>
