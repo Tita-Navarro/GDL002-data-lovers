@@ -2,7 +2,6 @@ let card = document.querySelector('#pkList');
 let typeFilterEl = document.querySelector('#type_filter');
 let sortElAz = document.querySelector('#az-button');
 let sortElZa = document.querySelector('#za-button');
-//let pokeCard= document.querySelector ('Info_Complete');
 // let weaknessesFilterEl = document.querySelector('#weaknesses_filter');
 
 
@@ -85,8 +84,12 @@ for(let completeTemplate=0;completeTemplate<completeCard.length; completeTemplat
   let pk_element = completeCard[completeTemplate];
   console.log(pk_element);
   pk_element.addEventListener('click', function () {
-    singlePokemon(pk_element.id);
+    document.getElementById("Info_Complete").innerHTML=singlePokemon(pk_element.id);
+    document.getElementById ("Info_Complete").style.display="flex";
+    document.getElementById ("lateral_content").style.display="block";
+    document.getElementById ("root").style.display='none';
+    document.getElementById ("filterDiv").style.display="flex";
+    document.getElementById ("pkList").style.display="none";
   }, false);
-  document.getElementById("Info_Complete").innerHTML= completeCard;
-  console.log(completeCard);
 }
+
