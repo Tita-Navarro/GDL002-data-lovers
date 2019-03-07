@@ -35,7 +35,6 @@ sortElAz.addEventListener('click', () => {
 });
 
 sortElZa.addEventListener('click', () => {
-  
   let dataSort= data.orderByEndName (POKEMON.pokemon);
   renderer(dataSort, card);
 });
@@ -43,10 +42,10 @@ sortElZa.addEventListener('click', () => {
 //Template para tarjetitas
 function pokemonTemplate(singlePokemon, index){
   let pokemonCardTemplate = `
-  <div id="${index}" class="singlePokemon">
+  <button id="${index}" class="singlePokemon">
     <h1 class="namepk">${singlePokemon.num} ${singlePokemon.name}</h1>
     <img src="${singlePokemon.img}">        
-  </div>
+  </button>
   `;
   return pokemonCardTemplate;
 }
@@ -81,11 +80,13 @@ function singlePokemon (completeTemplate){
  return pokemonCardInfo;
 }
 
-let completeCard = document.getElementsByClassName('singlePokemon');
+let completeCard =Array.from(document.getElementsByClassName('singlePokemon'));
 for(let completeTemplate=0;completeTemplate<completeCard.length; completeTemplate++) {
   let pk_element = completeCard[completeTemplate];
   console.log(pk_element);
   pk_element.addEventListener('click', function () {
     singlePokemon(pk_element.id);
   }, false);
+  document.getElementById("Info_Complete").innerHTML= completeCard;
+  console.log(completeCard);
 }
