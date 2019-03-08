@@ -206,7 +206,7 @@ h3 span {
     color: yellow;
 }
 /*css para div de listado pokémon*/
-.pokelist {
+.pokelist, .completeInfo {
     width: 90%;
     height: 75%;
     align-items: center;
@@ -215,8 +215,8 @@ h3 span {
     margin: 40px;
     flex-wrap: wrap;
     }
-.singlePokemon{
-    border-radius: 2px;
+.singlePokemon, .cardComplete{
+    border-radius: 10px;
     border: solid 1px;
     border-color: black;
     width: 180px;
@@ -226,6 +226,12 @@ h3 span {
     flex-direction: column;
     background-color: rgb(125, 188, 255);
     margin: 8px;
+    }
+    .cardComplete{
+        width: 500px;
+    }
+    .weight, .height, .weaknesses {
+        color: black;
     }
 .lateralContent{
     max-width: 100%;        

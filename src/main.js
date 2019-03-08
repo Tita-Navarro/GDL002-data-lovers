@@ -67,11 +67,11 @@ function singlePokemon (completeTemplate){
   <div id="completeInfo" class="cardComplete">
   <h1 class="pkname"> ${data.num} ${data.name}</h1>
   <img src="${data.img}"> 
-  <h2 class="typepk">${data.type}</h2>
+  <h2 class="typepk">Tipo: ${data.type}</h2>
   <div class="restInfo">
-  <h3 class="secondaryInfo"><span class="height">${data.height}</span> <br>
-  <span class="weight"> ${data.weight}</span><br> 
-  <span class="weaknesses"> ${data.weaknesses}</span>
+  <h3 class="secondaryInfo"><span class="height">Altura: ${data.height}</span> <br>
+  <span class="weight">Peso: ${data.weight}</span><br> 
+  <span class="weaknesses">Debilidades: ${data.weaknesses}</span>
   </div>
   </div>
   `;
