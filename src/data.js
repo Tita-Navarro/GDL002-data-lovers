@@ -26,6 +26,9 @@ data.orderByName = (data) => {
 data.orderByEndName = (data) => {
   return window.data.orderByName(data).reverse();
 };
-  
+
+data.getPokemonByNum = (pokemonNum, data) => {
+  return data.find(p => p.num === pokemonNum);
+}
 
 
