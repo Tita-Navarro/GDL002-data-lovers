@@ -70,7 +70,7 @@ describe('pokemonNotes', ()=>{
       }); 
     });
   
-  describe ('pokemon sorted by name', ()=>{
+  describe ('pokemon sorted by name A - Z', ()=>{
     let resultOrder=[{
       "id": 1,
     "num": "001",
@@ -126,4 +126,60 @@ describe('pokemonNotes', ()=>{
     });
   });
 
+describe ('pokemon sorted by name Z - A', ()=>{
+  let resultOrder=[{
+    "id": 2,
+    "num": "002",
+    "name": "Ivysaur",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+  }, 
+{
+  "id": 4,
+  "num": "004",
+  "name": "Charmander",
+  "type": [
+    "Fire"
+  ],
+  "weaknesses": [
+    "Water",
+    "Ground",
+    "Rock"
+  ],
+},
+{
+  "id": 1,
+"num": "001",
+"name": "Bulbasaur",
+"type": [
+  "Grass",
+  "Poison"
+],
+"weaknesses": [
+  "Fire",
+  "Ice",
+  "Flying",
+  "Psychic"
+],
+}, 
+];
+  it ('should be defined', ()=>{
+    expect(data.orderByEndName).toBeDefined();
+  });
+
+  it('should be a function', ()=>{
+    expect(typeof data.orderByEndName).toBe('function');
+  });
+  it('should order pokemon by name Z-A', ()=>{
+    expect(data.orderByEndName(mockData)).toEqual(resultOrder);
+  });
+});
 });
