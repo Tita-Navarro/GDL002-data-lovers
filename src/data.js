@@ -31,4 +31,10 @@ data.getPokemonByNum = (pokemonNum, data) => {
   return data.find(p => p.num === pokemonNum);
 }
 
+//Funcion para porcentaje
 
+data.percentage = (cantidadpkm, total) => {
+  let porc_pokemones = (cantidadpkm * 100) / total;
+  porc_pokemones = + porc_pokemones.toFixed(2) + '%';
+  return porc_pokemones;
+};
