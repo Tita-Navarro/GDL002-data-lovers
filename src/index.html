@@ -19,14 +19,14 @@
     
   <div id="table" class="table">
     <img src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/master/images/Logo_pokemon.png" 
-    alt="home" class="table" id="home">
-    <button id="list" class="list">Pokémon List</button>
+    alt="home" class="table list" id="home">
+    <button id="list" class="table list">Pokémon List</button>
     <a target="_blank" href="https://play.google.com/store/search?q=aplicaciones+pokemon&c=apps">
       <img alt="mobile app" id="mobileApp" 
       src="https://raw.githubusercontent.com/Tita-Navarro/GDL002-data-lovers/desarrollo/images/mobile_app.jpg" 
       class="table">
     </a>  
-    <img alt="pokemon day" id="pokeday" class="pokeday" src="../images/pokeday.png">
+    <img alt="pokemon day" id="pokeday" class="pokeday list" src="../images/pokeday.png">
   </div>
   </header>
     <div id="root" class="container">
@@ -100,7 +100,7 @@
       </section>
     </div>
     
-    <div id="filterDiv" class="table" hidden>
+    <div id="filterDiv" class="table filterDiv" hidden>
 
       <section id="lateral_content" class="lateralContent">
           <h2 id="filtered" class="filtered">Filtrar u ordenar por:</h2>  
@@ -122,17 +122,16 @@
               <option value="Ice">Hielo</option>
               <option value="Ghost">Fantasma</option>
               <option value="Normal">Normal</option>
-              
             </select>
-            <button id="percentage" class="button_submit">Calcular porcentaje</button>
-          </section>
+            <span id="percent" class="percent"></span>
+      </section>
     </div>
       
     
       <div id="pkList" class="pokelist" hidden></div>
 
       <div id="Info_Complete" class="completeInfo" hidden></div>
-    
+      
     
       <footer id="footer_page" class="bottom_page">
         <h3 class="socialNetwork">Síguenos: </h3>
