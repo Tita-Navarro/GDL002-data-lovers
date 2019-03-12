@@ -2,15 +2,16 @@ let pokemonList = document.querySelector('#pkList');
 let typeFilterEl = document.querySelector('#type_filter');
 let sortElAz = document.querySelector('#az-button');
 let sortElZa = document.querySelector('#za-button');
-// let weaknessesFilterEl = document.querySelector('#weaknesses_filter');
+let porcEl = document.querySelector('#percent');
 
 
 // Declaraciones para controlar pantallas
   const list=()=>{
     document.getElementById ("pkList").style.display= 'flex';
-    document.getElementById ("lateral_content").style.display="block";
+    document.getElementById ("lateral_content").style.display="flex";
     document.getElementById ("root").style.display='none';
     document.getElementById ("filterDiv").style.display="flex";
+    document.getElementById ("Info_Complete").style.display="none";
   };
   document.getElementById("list").addEventListener('click', list);
 
@@ -18,12 +19,15 @@ let sortElZa = document.querySelector('#za-button');
     document.getElementById("root").style.display='block';
     document.getElementById ("lateral_content").style.display="none";
     document.getElementById("pkList").style.display='none';
+    document.getElementById ("Info_Complete").style.display="none";
   };
   document.getElementById("home").addEventListener('click', home);
 
 // Para mostrar el filtro
 typeFilterEl.addEventListener('change', () => {
-  let _data = data.typeFilter(POKEMON.pokemon, typeFilterEl.value); //aquí
+  let _data = data.typeFilter(POKEMON.pokemon, typeFilterEl.value); //aquí filtro
+  let percentage = data.percentage(_data.length, POKEMON.pokemon.length); //medimos el array
+  porcEl.innerHTML="El porcentaje de Pokémon de este tipo es: " + percentage;
   renderer(_data, pokemonList);
  });
 
@@ -56,7 +60,7 @@ const renderer = (data, htmlElement) => {
     html = html + pokemonTemplate(singlePokemon);
     //html + Es para que junte las tarjetitas cada vez q se cumpla el ciclo, para que las vaya sumando en pantalla
   }        
-  htmlElement.innerHTML = html;
+  htmlElement.innerHTML=html;
 
   let completeCard = document.getElementsByClassName('singlePokemon');
 for(let cardIndex=0;cardIndex<completeCard.length; cardIndex++) {
@@ -81,16 +85,15 @@ function singlePokemon (pokemonId){
   <div id="completeInfo" class="cardComplete">
   <h1 class="pkname"> ${data.num} ${data.name}</h1>
   <img src="${data.img}"> 
-  <h2 class="typepk">Tipo: ${data.type}</h2>
+  <h2 class="typepk">Type: ${data.type}</h2>
   <div class="restInfo">
-  <h3 class="secondaryInfo"><span class="height">Altura: ${data.height}</span> <br>
-  <span class="weight">Peso: ${data.weight}</span><br> 
-  <span class="weaknesses">Debilidades: ${data.weaknesses}</span>
+  <h3 class="secondaryInfo"><span class="height">Height: ${data.height}</span> <br>
+  <span class="weight">Weight: ${data.weight}</span><br> 
+  <span class="weaknesses">Weaknesses: ${data.weaknesses}</span> <br>
+  <span class="candy">Candies: ${data.candy} </h3>
   </div>
   </div>
   `;
  console.log(pokemonCardInfo);
  return pokemonCardInfo;
 }
-
-
